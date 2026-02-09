@@ -1,0 +1,13 @@
+- name: "Veda Vyas"
+  dob: "08-june-1999"
+  mobileno: 8106224057
+  addresses:
+  - flat: 305
+    street: "p&t colony"
+    city: "hyderabad"
+    type: "current"
+
+  - flat: 208
+    street: "gautham nagar"
+    city: "vijayawada"
+    type: "perm"  
