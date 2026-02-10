@@ -1,0 +1,9 @@
+#Arguments
+
+- name: arguments
+  hosts: local
+  connection: local
+  tasks:
+  - name: Arguments
+    ansible.builtin.debug:
+    msg: "Hi {{NAME}}, welcome to {{Course}}"
