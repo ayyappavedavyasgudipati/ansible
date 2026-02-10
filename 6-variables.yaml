@@ -7,7 +7,7 @@
   - course.yaml # getting variables from another files  
 
   tasks:
-    name: variables
+  - name: variables
     vars:
       course: "Ansible" # This Course is task level it override the above course and variable and print this
     ansible.builtin.debug:
