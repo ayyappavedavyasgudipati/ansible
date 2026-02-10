@@ -1,0 +1,18 @@
+# task level variables
+
+- name: play level variables
+  hosts: local
+  connection: local
+
+  vars:
+    course: "Devops with AWS"
+    platform: "joindevops"
+    trainer: "siva kumar"
+    duration: "140hrs"
+
+  tasks:
+    name: variables
+    vars:
+      course: "Ansible" # This Course is task level it override the above course and variable and print this
+    ansible.builtin.debug:
+      msg: "course is {{course}}, platform is {{platform}}, trainer is {{trainer}}, duration is {{duration}}"  

@@ -1,0 +1,9 @@
+- name: play level variables
+  hosts: local
+  connection: local
+  vars_prompt:
+
+  tasks:
+  - name: from inventory
+    ansible.builtin.debug:
+      msg: "course is: {{ course }}"
