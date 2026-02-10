@@ -11,6 +11,6 @@
     duration: "140hrs"
 
   tasks:
-    name: variables
+  - name: variables
     ansible.builtin.debug:
      msg: "course is {{course}}, platform is {{platform}}, trainer is {{trainer}}, duration is {{duration}}"  
