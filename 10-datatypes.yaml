@@ -2,7 +2,7 @@
 
 - name: datatypes and conditions in ansible
   hosts: local
-  connection: hosts
+  connection: local
   vars:
     program: DevSecOps with AWS         #string
     Duration: 140                       #number/integer
