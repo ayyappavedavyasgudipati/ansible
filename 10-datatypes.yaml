@@ -1,0 +1,30 @@
+#data types in Ansible
+
+- name: datatypes and conditions in ansible
+  hosts: local
+  connection: hosts
+  vars:
+    program: DevSecOps with AWS         #string
+    Duration: 140                       #number/integer
+    trainer: sivakumar                  
+    IS_LIVE: true                       #bool
+    details:                            #map/dictionaries
+      months: 4
+      'QA ssesions': Available
+    topics:                             #lists
+      - linux
+      - shell
+      - ansible
+      - terraform
+
+  tasks:
+  - name: Print data types using conditions
+    ansible.builtin.debug:
+      msg: | 
+        program: {{ program }}
+        Duration: {{ Duration }}
+        IS_LIVE: {{ IS_LIVE }}
+        details: {{ details }}
+        topics: {{ topics }}
+
+    when: IS_LIVE==true                   #condition
