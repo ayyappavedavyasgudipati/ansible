@@ -20,5 +20,5 @@
     ansible.builtin.debug:
       msg: "{{ item.name }} age is {{ item.age }}"
     when: item.age  < 31                                            # applying condition for loop to get students age less that:31
-    loop: 
+    loop:                                                           # loops
       "{{ students }}"
