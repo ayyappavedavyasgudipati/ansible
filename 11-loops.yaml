@@ -16,4 +16,4 @@
     ansible.builtin.debug:
       msg: students are {{ item }}
     loop:
-      {{ students }}    
+      "{{ students }}"    
