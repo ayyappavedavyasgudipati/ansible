@@ -8,7 +8,7 @@
     Duration: 140                       #number/integer
     trainer: sivakumar                  
     #IS_LIVE: true                       #bool
-    IS_LIVE: false
+    IS_LIVE: false                       #to skip the condition
     details:                            #map/dictionaries
       months: 4
       'QA ssesions': Available

@@ -1,0 +1,19 @@
+#loops in ansible
+
+- name: loops
+  hosts: local
+  connection: local
+
+  vars:
+    students:
+    - vedavyas
+    - nikhil
+    - karthik
+    - teja
+
+  tasks:
+  - name: loops
+    ansible.builtin.debug:
+      msg: students are {{ item }}
+    loop:
+      students     
