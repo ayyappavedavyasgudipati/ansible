@@ -7,7 +7,8 @@
     program: DevSecOps with AWS         #string
     Duration: 140                       #number/integer
     trainer: sivakumar                  
-    IS_LIVE: true                       #bool
+    #IS_LIVE: true                       #bool
+    IS_LIVE: false
     details:                            #map/dictionaries
       months: 4
       'QA ssesions': Available
