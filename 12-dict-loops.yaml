@@ -1,0 +1,24 @@
+#loops and condition
+
+- name: loops and conditions
+  hosts: local
+  connection: local
+
+  vars:
+    students:
+    - name: "veda vyas"
+      age: 27
+
+    - name: "karthik"
+      age: 30
+
+    - name: "ravi"
+      age: 32
+
+  tasks:
+  - name: loops with condition
+    ansible.builtin.debug:
+      msg: "{{ item.name }} age is {{ item.age }}"
+    when: students{{ item.age }} < 31
+    loop: 
+      "{{ students }}"
